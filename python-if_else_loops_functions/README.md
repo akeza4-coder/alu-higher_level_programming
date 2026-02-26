@@ -1,1 +1,1 @@
-This directory contains tasks for Python if/else, loops, and functions.
+This directory contains Python tasks for if/else statements, loops, and functions.
