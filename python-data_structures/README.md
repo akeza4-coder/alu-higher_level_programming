@@ -1,1 +1,1 @@
-This project contains Python data structures tasks.
+Python - Data Structures: Lists, Tuples
