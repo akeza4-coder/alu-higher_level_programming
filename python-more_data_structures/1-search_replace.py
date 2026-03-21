@@ -1,7 +1,4 @@
-#ste code, save and exit)
-
-# Re-create 2-uniq_add.py
-vi 2-uniq_add.py
-# (Paste code, save and exit)!/usr/bin/python3
-python3 "$PYFILE"
-
+#!/usr/bin/python3
+def search_replace(my_list, search, replace):
+    """Replaces all occurrences of an element by another in a new list"""
+    return [replace if x == search else x for x in my_list]
