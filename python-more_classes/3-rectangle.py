@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module defines a Rectangle class with area, perimeter, str, and repr.
+This module defines a Rectangle class with a string representation.
 """
 
 
@@ -55,10 +55,9 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
 
-        # Create rows of # and join them with newlines
-        rows = ["#" * self.__width for _ in range(self.__height)]
-        return "\n".join(rows)
-
-    def __repr__(self):
-        """Returns a string representation to recreate the instance via eval()."""
-        return "Rectangle({}, {})".format(self.__width, self.__height)
+        rect_str = ""
+        for i in range(self.__height):
+            rect_str += ("#" * self.__width)
+            if i < self.__height - 1:
+                rect_str += "\n"
+        return rect_str

@@ -14,7 +14,11 @@ class Rectangle:
 
     @property
     def width(self):
+<<<<<<< HEAD
         """Retrieves the width."""
+=======
+        """Retrieves the private width attribute."""
+>>>>>>> f764066cd66543ebb0c1b6b0ddcbda1f5a4271ab
         return self.__width
 
     @width.setter
@@ -28,7 +32,11 @@ class Rectangle:
 
     @property
     def height(self):
+<<<<<<< HEAD
         """Retrieves the height."""
+=======
+        """Retrieves the private height attribute."""
+>>>>>>> f764066cd66543ebb0c1b6b0ddcbda1f5a4271ab
         return self.__height
 
     @height.setter
@@ -41,11 +49,21 @@ class Rectangle:
         self.__height = value
 
     def area(self):
+<<<<<<< HEAD
         """Returns the rectangle area."""
         return self.__width * self.__height
 
     def perimeter(self):
         """Returns the rectangle perimeter."""
+=======
+        """Calculates and returns the rectangle area."""
+        return self.__width * self.__height
+
+    def perimeter(self):
+        """Calculates and returns the rectangle perimeter.
+        Returns 0 if width or height is 0.
+        """
+>>>>>>> f764066cd66543ebb0c1b6b0ddcbda1f5a4271ab
         if self.__width == 0 or self.__height == 0:
             return 0
         return (self.__width * 2) + (self.__height * 2)
