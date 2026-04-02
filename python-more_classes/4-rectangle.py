@@ -54,11 +54,9 @@ class Rectangle:
         """Returns a string representation of the rectangle using #."""
         if self.__width == 0 or self.__height == 0:
             return ""
-
-        # Create rows of # and join them with newlines
         rows = ["#" * self.__width for _ in range(self.__height)]
         return "\n".join(rows)
 
     def __repr__(self):
-        """Returns a string representation to recreate the instance via eval()."""
+        """Returns a string representation to recreate the instance."""
         return "Rectangle({}, {})".format(self.__width, self.__height)
