@@ -22,14 +22,11 @@ def pascal_triangle(n):
 
     for i in range(1, n):
         prev_row = triangle[i - 1]
-        # Start the row with 1
         current_row = [1]
-        
-        # Calculate the middle elements
+
         for j in range(1, i):
             current_row.append(prev_row[j - 1] + prev_row[j])
-            
-        # End the row with 1
+
         current_row.append(1)
         triangle.append(current_row)
 
